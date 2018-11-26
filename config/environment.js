@@ -6,6 +6,15 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    // Initialize Firebase
+    firebase: {
+      apiKey: "AIzaSyBnFw6vOJHKs3pURYyAz5rogObM1xUQTIc",
+      authDomain: "emberlibraryapp-3799f.firebaseapp.com",
+      databaseURL: "https://emberlibraryapp-3799f.firebaseio.com",
+      projectId: "emberlibraryapp-3799f",
+      storageBucket: "emberlibraryapp-3799f.appspot.com",
+      messagingSenderId: "1053467503609"
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -25,10 +34,10 @@ module.exports = function(environment) {
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
-    // ENV.APP.LOG_ACTIVE_GENERATION = true;
-    // ENV.APP.LOG_TRANSITIONS = true;
-    // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-    // ENV.APP.LOG_VIEW_LOOKUPS = true;
+     ENV.APP.LOG_ACTIVE_GENERATION = true;
+     ENV.APP.LOG_TRANSITIONS = true;
+     ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
+     ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
   if (environment === 'test') {
